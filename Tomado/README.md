@@ -1,0 +1,51 @@
+# Tomado
+Tomado used to convert a markdown file into a webpage with the 'readme.md' file style.
+
+## How to use
+- Run. `php Tomado.php <markdownfile> <filename>`
+>  `php Tomado.php mymarkdown.txt webpage`
+
+- `help`
+
+```
+php Tomado.php [markdownfile] [filename]
+
+    markdownfile            Input File (Markdown).
+    filename	            Name of the output File.
+
+```
+
+## Template Customization
+
+```
+<html>
+	<head>
+		<title>{title}</title>
+		<style type="text/css">
+			.
+			.
+		</style>
+	</head>
+	
+<body>
+	<div class="container">
+	{content}
+	</div>
+</body>
+</html>
+```
+
+- '`{title}`' is a placeholder for the title of the page ( same as `<filename>` ).
+- '`{content}`' is a placeholder for the HTML Markup.
+
+## Note
+- The output file will be generated at the same directory of `<markdownfile>`.
+- Check the `Example` folder to see the input/output.
+
+## Dependencies
+- [Parsedown](https://github.com/erusev/parsedown)
+
+## Tested on
+- Windows 10
+
+<br>For any suggestion email me on [mohab.elsheikh@gmail.com](mailto:mohab.elsheikh@gmail.com).
